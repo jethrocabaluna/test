@@ -1,0 +1,83 @@
+/* body====================== */
+body{
+    /* background-image: linear-gradient(90deg, #154c4c, #374c15); */
+    font-size: 17px;
+    font-family: arial;
+    line-height: 1.5em;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* The UI==================== */
+#theUI{
+    width: 500px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1#header{
+    letter-spacing: 1px;
+    color: #11998e;
+    padding: 10px;
+    margin: 0;
+}
+input{
+    font-size: 18px;
+    background-color: #e9ffe2;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 13px 13px 13px 16px;
+    color: #6b9915;
+    border: 3px solid rgba(0,0,0,0);
+}
+input:focus{
+    background: white;
+    border: 3px solid #A1FFCE;
+    outline: none;
+}
+/* content=================== */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    /* padding: 10px; */
+    color: #6b9915;
+    height: 40px;
+}
+li:nth-of-type(odd){
+    background-color: #ceffbf;
+}
+li:nth-of-type(even){
+    background-color: #e9ffe2;
+}
+li:hover span{
+    width: 40px;
+    opacity: 1;
+}
+span{
+    background: #ef4a2d;
+    height: 40px;;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s;
+    opacity: 0;
+}
+/* JS toggles================ */
+.checkoff{
+    text-decoration: line-through;
+    color: #cfdbb8;
+}
+.fa-plus{
+    float: right;
+    padding-right: 3px;
+}
+.fa-minus-circle{
+    padding-top: 10px;
+}
